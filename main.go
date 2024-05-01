@@ -1,6 +1,6 @@
 package main
 
-import "github.com/afzalansari028/mystack/mystack"
+import "github.com/afzalansari028/go-stack/mystack"
 
 func main() {
 	stack := mystack.Stack{}
