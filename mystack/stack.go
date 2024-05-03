@@ -1,6 +1,9 @@
 package mystack
 
-import "fmt"
+import (
+	"fmt"
+	"log"
+)
 
 type Stack struct {
 	Data []interface{}
@@ -20,7 +23,7 @@ func (stack *Stack) IsEmpty() bool {
 // add an element into the stack
 func (stack *Stack) Push(val interface{}) {
 	if stack.Size() == default_size {
-		fmt.Println("STACK IS FULL")
+		log.Println("STACK IS FULL")
 		return
 	}
 	stack.Data = append(stack.Data, val)
@@ -29,7 +32,7 @@ func (stack *Stack) Push(val interface{}) {
 // remove the element from top
 func (stack *Stack) Pop() int {
 	if stack.IsEmpty() {
-		fmt.Println("STACK IS EMPTY")
+		log.Println("STACK IS EMPTY")
 		return 0
 	}
 	rv := len(stack.Data) - 1
@@ -38,15 +41,17 @@ func (stack *Stack) Pop() int {
 	return rv
 }
 
+// see the firsts top elemment
 func (stack *Stack) Peek() interface{} {
 	if stack.Size() == 0 {
-		fmt.Println("STACK IS EMPTY")
+		log.Println("STACK IS EMPTY")
 		return 0
 	}
 	rv := stack.Data[len(stack.Data)-1]
 	return rv
 }
 
+// show all the elements
 func (stack *Stack) Display() {
 
 	for i := len(stack.Data) - 1; i >= 0; i-- {
