@@ -4,9 +4,9 @@ import "github.com/afzalansari028/go-stack/mystack"
 
 func main() {
 	stack := mystack.Stack{}
-	stack.Push(10)
-	stack.Push(20)
-	stack.Push(30)
+	stack.Push("a")
+	stack.Push("b")
+	stack.Push("c")
 
 	stack.Display()
 }
