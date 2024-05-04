@@ -29,7 +29,7 @@ func main() {
 	stack.Push(10) // push an elemment into the stack int type
 	stack.Push("a")
 	stack.Display()
-	stack.Pop() // remomve an elememnt from the stack
+	stack.Pop() // remove an elememnt from the stack
 
 	stack.Display()                            //display all elements
 	fmt.Println("top element::", stack.Peek()) // see the top element
