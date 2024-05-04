@@ -6,7 +6,7 @@ Stack is a linear data structure which follows the LIFO(Last In First Out) polic
 ===================
 ## Installation
 
-With the help of below Go command, simply install the mystack package
+With the help of below Go command, simply install the `mystack` package
 ```bash
  import "github.com/afzalansari028/go-stack/mystack"
 ```
