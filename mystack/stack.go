@@ -30,12 +30,12 @@ func (stack *Stack) Push(val interface{}) {
 }
 
 // remove the element from top
-func (stack *Stack) Pop() int {
+func (stack *Stack) Pop() interface{} {
 	if stack.IsEmpty() {
 		log.Println("STACK IS EMPTY")
 		return 0
 	}
-	rv := len(stack.Data) - 1
+	rv := stack.Data[len(stack.Data)-1]
 	stack.Data = stack.Data[:len(stack.Data)-1]
 
 	return rv
