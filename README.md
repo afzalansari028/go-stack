@@ -2,6 +2,15 @@
 ====================================
 Stack is a linear data structure which follows the LIFO(Last In First Out) policy. You can only access or modify the most recently item added.
 
+This implementation is done using slice.
+
+## Time Complexity of operations
+Push() : O(1)  
+Pop() : O(1)  
+Peek() : O(1)  
+Size() : O(1)  
+IsEmpty() : O(1)
+
 **Get started**
 ===================
 ## Installation
